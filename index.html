@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WarRoom File Uploader</title>
+
+    <link href="https://warroomarsenal.codesalvageon.repl.co/styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" rel="icon"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="center">
+      <div id="logo">
+        <h1><img src="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" height="40" width="40"/>The WarRoom<img src="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" height="40" width="40"/></h1> 
+      </div>
+      <i>The WarRoom's File Uploader</i>
+      <form method="POST" action="/upload" ref="uploadForm" encType="multipart/form-data" id="uploadForm">
+        <h3>Your File: <input type="file" class="text-input" required name="sampleFile"/></h3>
+        <button class="front-button">Upload</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://warroomarsenal.codesalvageon.repl.co/scripts/database.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WarRoom File Uploader</title>
+
+    <link href="https://warroomarsenal.codesalvageon.repl.co/styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" rel="icon"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="center">
+      <div id="logo">
+        <h1><img src="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" height="40" width="40"/>The WarRoom<img src="https://warroomarsenal.codesalvageon.repl.co/images/swords.png" height="40" width="40"/></h1> 
+      </div>
+      <i>The WarRoom's File Uploader</i>
+      <br/>
+      <form action="https://warroomdatabase.codesalvageon.repl.co/create" method="POST">
+        <i>Upload Files <a href="https://warroomdatabase.codesalvageon.repl.co" target="_blank">here.</a></i>
+        <h3>Thread Title: <input class="text-input" name="thread_title" required maxlength="100"/></h3>
+        <h3>Username(Optional): <input class="text-input" name="username" maxlength="30" placeholder="WarRoom Guest"/></h3>
+        <h3>File Link(Optional): <input type="text" name="image_link" class="text-input"/></h3>
+        <h3>Body:</h3>
+        <br/>
+        <textarea rows="5" cols="50" name="body" required class="text-input"></textarea>
+        <br/>
+        <br/>
+        <button class="front-button">Create Thread</button>
+      </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://warroomarsenal.codesalvageon.repl.co/scripts/database.js"></script>
+  </body>
+</html>
